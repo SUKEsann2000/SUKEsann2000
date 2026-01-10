@@ -1,0 +1,36 @@
+name: Update SVG
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # 自動コミット用
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./contribute_shooting
+
+      - name: Build
+        run: npm start
+        working-directory: ./contribute_shooting
+
+      - name: Commit and push out.svg
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add contribute_shooting/out.svg
+          git commit -m "Update out.svg" || echo "No changes to commit"
+          git push
