@@ -1,18 +1,19 @@
-name: Update SVG
+name: Update SVG Hourly
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '0 * * * *'  # 毎時0分に実行
   workflow_dispatch:
 
 jobs:
   build-and-commit:
     runs-on: ubuntu-latest
     steps:
+      # リポジトリのチェックアウト（submoduleも含む）
       - uses: actions/checkout@v3
         with:
-          persist-credentials: true  # 自動コミット用
+          submodules: recursive   # これで submodule も fetch される
+          persist-credentials: true
 
       - name: Setup Node
         uses: actions/setup-node@v3
