@@ -22,7 +22,7 @@
 
 ## 🔥 Activity
 
-![GitHub Streak](https://streak-stats.demolab.com?user=SUKEsann2000&theme=transparent)
+[![GitHub Streak](https://streak-stats.demolab.com?user=SUKEsann2000)](https://git.io/streak-stats)
 
 ---
 
