@@ -14,9 +14,9 @@
 
 ## 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=SUKEsann2000&show_icons=true&theme=transparent)
+![GitHub stats](https://my-readme-stats-e1clipihb-sukesann2000s-projects.vercel.app/api?username=SUKEsann2000&show_icons=true&theme=transparent)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SUKEsann2000&layout=compact&theme=transparent)
+![Top Langs](https://my-readme-stats-e1clipihb-sukesann2000s-projects.vercel.app/api/top-langs/?username=SUKEsann2000&layout=compact&theme=transparent)
 
 ---
 
