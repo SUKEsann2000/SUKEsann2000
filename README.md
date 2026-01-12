@@ -22,7 +22,7 @@
 
 ## 🔥 Activity
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=SUKEsann2000)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats-vijaypur.vercel.app/?user=SUKEsann2000)](https://git.io/streak-stats)
 
 ---
 
